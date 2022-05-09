@@ -37,9 +37,8 @@ public class AppiumCaclulator {
         }
         try {
             var result = driver.findElement(By.xpath("//android.view.View[@content-desc=\"10\"]"));
-
         } catch (Exception e) {
-            System.out.println("Failed");
+            e.printStackTrace();
         }
     }
 }
